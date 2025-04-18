@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import santander from "../../Assets/Projects/santander.jpeg";
-import spaceshiptitanic from "../../Assets/Projects/spaceshiptitanic.jpeg";
+import salifortmotors from "../../Assets/Projects/coursera_google.jpeg";
+import storesales from "../../Assets/Projects/header.png";
 import noonewaits from "../../Assets/Projects/noonewaits.png";
 import greencat from "../../Assets/Projects/ecommerce_website.png";
-import transfermarkt from "../../Assets/Projects/transfermarkt.jpg";
+import fifteenmincity from "../../Assets/Projects/15mincity.png";
 import passoassist from "../../Assets/Projects/passo.gif";
 
 function Projects() {
@@ -21,6 +21,40 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={salifortmotors}
+              isBlog={false}
+              title="Salifort Motors HR Attrition Analysis"
+              description="Developed a high-accuracy Random Forest model (97.8%) to predict employee turnover, identifying key attrition factors and providing actionable HR strategies to reduce hiring costs."
+              ghLink="https://github.com/alirizaercan/Data-Science-Projects/blob/main/salifort-motors-google-capstone-project.ipynb"
+              demoLink="https://kaggle.com/code/alirizaercan/salifort-motors-google-capstone-project"
+            />
+          </Col>
+
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={storesales}
+              isBlog={false}
+              title="Store Sales Forecasting with Time Series & Machine Learning"
+              description="Engineered a LightGBM time series model (RMSLE: 0.47251) to forecast sales for 54 stores, optimizing inventory planning using 5+ years of economic and post-disaster data."
+              ghLink="https://github.com/alirizaercan/Data-Science-Projects/blob/main/store-sales-time-series-data-science-technique.ipynb"
+              demoLink="https://kaggle.com/code/alirizaercan/store-sales-time-series-data-science-technique"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fifteenmincity}
+              isBlog={false}
+              title="15MinGreenCity-Besiktas-IBB"
+              description="Led Python-based geospatial analysis to transform Beşiktaş into a walkable 15-minute city, with policy recommendations adopted by Istanbul Municipality."
+              ghLink="https://github.com/alirizaercan/15MinGreenCity-Besiktas-IBB"
+            />
+          </Col>
+
           <Col md={4} className="project-card"> 
             <ProjectCard
               imgPath={greencat}
@@ -54,40 +88,6 @@ function Projects() {
             />
           </Col>
 
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={santander}
-              isBlog={false}
-              title="Santander - Data Science"
-              description="Completed a full-cycle data science project for Santander, tackling real-world challenges through data collection, cleaning, feature engineering, and model evaluation."
-              ghLink="https://github.com/alirizaercan/Data-Science-Projects/blob/main/santander-data-science-details-and-explanation.ipynb"
-              demoLink="https://www.kaggle.com/code/alirizaercan/santander-data-science-details-and-explanation"
-            />
-          </Col>
-
-
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={spaceshiptitanic}
-              isBlog={false}
-              title="Spaceship Titanic"
-              description="Built a predictive model for the 'Spaceship Titanic' dataset to identify passengers transported to an alternate dimension, using data cleaning, feature engineering, and machine learning."
-              ghLink="https://github.com/alirizaercan/Data-Science-Projects/blob/main/spaceship-titanic-data-science-with-details.ipynb"
-              demoLink="https://www.kaggle.com/code/alirizaercan/spaceship-titanic-data-science-with-details"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={transfermarkt}
-              isBlog={false}
-              title="Transfermarkt Süper Lig - Konyaspor Analysis"
-              description="Analyzed Konyaspor's performance using Super League data, utilizing Python libraries for data processing and advanced visualizations to extract actionable insights."
-              ghLink="https://github.com/alirizaercan/Transfermarkt_Super_League-Konyaspor_Analysis"
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
