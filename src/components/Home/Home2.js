@@ -19,24 +19,28 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Hi, I'm <b className="purple">Ali Rıza Ercan</b>, a passionate Senior Computer Engineering Student specializing in
+              Hi, I'm <b className="purple">Ali Rıza Ercan</b>, a Computer Engineering graduate from KTO Karatay University specializing in
               <i>
                 <b className="purple"> Data Science and Machine Learning.</b>
               </i>
               <br />
               <br />I have hands-on experience with technologies such as
               <i>
-                <b className="purple"> Python, SQL, and FastAPI. </b>
+                <b className="purple"> Python, SQL, FastAPI, React, and Flask. </b>
               </i>
               <br />
               <br />My interests lie in developing <b className="purple">AI-driven applications</b> and working on projects involving
-              <b className="purple"> Machine Learning, Data Analytics, and Predictive Modeling.</b>
+              <b className="purple"> Machine Learning, Data Analytics, Computer Vision, and Football Analytics.</b>
               <br />
               <br />I have gained valuable experience at
-              <b className="purple"> HAVELSAN</b> as a Data Science Intern, focusing on NLP applications and building microservices for text preprocessing.
+              <b className="purple"> HAVELSAN</b>, Turkey's leading defense industry IT company, as a Data Science Intern, deepening my knowledge of model evaluation and AI-driven solutions.
               <br />
-              <br />Additionally, I have been part of international programs through
-              <b className="purple"> Erasmus Mobility</b>, studying at Politechnika Bydgoska and interning at MetalMaker 3D in Poland.
+              <br />My graduation project, <b className="purple">TYFOR</b>, is a football analytics platform that integrates AI, machine learning, and computer vision to deliver insights to over 30 clubs.
+              <br />
+              <br />I hold the <b className="purple">Google Advanced Data Analytics Certificate</b> and was selected as a Data Science Scholar by Google and Yapay Zeka ve Teknoloji Academy.
+              <br />
+              <br />Additionally, I have gained international experience through
+              <b className="purple"> Erasmus+ Mobility Programs</b>, studying at Politechnika Bydgoska and interning at MetalMaker 3D in Poland.
               <br />
               <br />I am also active in data science competitions, holding an
               <b className="purple"> Expert status on Kaggle</b> and consistently working on impactful projects.

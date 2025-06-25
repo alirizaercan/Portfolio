@@ -8,6 +8,7 @@ import noonewaits from "../../Assets/Projects/noonewaits.png";
 import greencat from "../../Assets/Projects/ecommerce_website.png";
 import fifteenmincity from "../../Assets/Projects/15mincity.png";
 import passoassist from "../../Assets/Projects/passo.gif";
+import tyfor from "../../Assets/Projects/tyfor_main_page.png";
 
 function Projects() {
   return (
@@ -21,7 +22,17 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tyfor}
+              isBlog={false}
+              title="TYFOR - Technology Youth Football Optimization Research Platform"
+              description="Developed end-to-end data-driven football analytics platform serving 30+ clubs with 1,500+ player profiles, achieving 95% accuracy in performance analytics through machine learning algorithms and real-time PostgreSQL database integration. Built comprehensive AI-powered scouting network utilizing computer vision (YOLO v8), web scraping, and predictive modeling to identify promising talents across Turkish and Polish leagues with automated transfer strategy optimization."
+              demoLink="https://tyfor.online"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={salifortmotors}
               isBlog={false}
@@ -31,8 +42,6 @@ function Projects() {
               demoLink="https://kaggle.com/code/alirizaercan/salifort-motors-google-capstone-project"
             />
           </Col>
-
-
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -55,7 +64,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card"> 
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={greencat}
               isBlog={false}
@@ -64,7 +73,6 @@ function Projects() {
               ghLink="https://github.com/alirizaercan/eCommerce_Website_Greencat"
             />
           </Col>
-
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -76,7 +84,6 @@ function Projects() {
             />
           </Col>
 
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={noonewaits}
@@ -87,6 +94,8 @@ function Projects() {
               demoLink="https://beklemesinkimse.com"
             />
           </Col>
+
+
 
         </Row>
       </Container>
