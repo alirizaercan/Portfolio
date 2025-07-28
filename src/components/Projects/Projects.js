@@ -27,7 +27,7 @@ function Projects() {
               imgPath={tyfor}
               isBlog={false}
               title="TYFOR - Technology Youth Football Optimization Research Platform"
-              description="Developed end-to-end data-driven football analytics platform serving 30+ clubs with 1,500+ player profiles, achieving 95% accuracy in performance analytics through machine learning algorithms and real-time PostgreSQL database integration. Built comprehensive AI-powered scouting network utilizing computer vision (YOLO v8), web scraping, and predictive modeling to identify promising talents across Turkish and Polish leagues with automated transfer strategy optimization."
+              description="Developed end-to-end data-driven football analytics platform encompassing 50+ clubs and 1,500+ player profiles, achieving 95% accuracy in performance analytics through machine learning algorithms and real-time PostgreSQL database integration. Built comprehensive AI-powered scouting network utilizing computer vision (YOLO v8), web scraping, and predictive modeling to identify promising talents across Turkish and Polish leagues with automated transfer strategy optimization."
               demoLink="https://tyfor.online"
             />
           </Col>
@@ -89,7 +89,7 @@ function Projects() {
               imgPath={noonewaits}
               isBlog={false}
               title="No One Waits"
-              description="AI-powered solution for predicting occupancy rates in public transportation. Used SSD model and YOLOv8 algorithm for real-time passenger counting, integrated with web and Android platforms for seamless access. Analyzed historical data to help users make informed transportation choices."
+              description="Won 2nd place at TEKNOFEST 2024 with real-time transportation occupancy prediction system using computer vision algorithms. Deployed Firebase-integrated solution providing users with accessible occupancy data across web and mobile platforms."
               ghLink="https://github.com/INTELLIVISIONteam/teknofest_website"
               demoLink="https://beklemesinkimse.com"
             />
