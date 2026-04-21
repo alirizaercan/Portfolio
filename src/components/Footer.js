@@ -14,7 +14,11 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          
+          <h3>
+            <a href="mailto:alirizaercan1@gmail.com" style={{ color: "white", textDecoration: "none" }}>
+              alirizaercan1@gmail.com
+            </a>
+          </h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} Ali Rıza Ercan</h3>
@@ -27,18 +31,9 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
+                title="GitHub Profile"
               >
                 <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://x.com/ktokaratay/status/1842548108393119949"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
               </a>
             </li>
             <li className="social-icons">
@@ -47,6 +42,7 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
+                title="LinkedIn Profile"
               >
                 <FaLinkedinIn />
               </a>
@@ -57,8 +53,18 @@ function Footer() {
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
+                title="Instagram Profile"
               >
                 <AiFillInstagram />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="tel:+905342402651"
+                style={{ color: "white" }}
+                title="Phone Number"
+              >
+                📱
               </a>
             </li>
           </ul>
