@@ -6,6 +6,7 @@ import {
   DiNodejs,
   DiPython,
   DiGit,
+  DiPostgresql,
 } from "react-icons/di";
 import {
   SiFirebase,
@@ -18,6 +19,9 @@ import {
   SiGooglecloud,
   SiC,
   SiSelenium,
+  SiFlask,
+  SiFastapi,
+  SiHuggingface,
 } from "react-icons/si";
 
 function Techstack() {
@@ -36,19 +40,28 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <SiFlask />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFastapi />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiTensorflow />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiScikitlearn />
+        <SiPytorch />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiKeras />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch />
+        <SiScikitlearn />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiHuggingface />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNumpy />
