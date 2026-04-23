@@ -3,7 +3,6 @@ import { Col, Row } from "react-bootstrap";
 import {
   DiJavascript1,
   DiReact,
-  DiNodejs,
   DiPython,
   DiGit,
   DiPostgresql,
