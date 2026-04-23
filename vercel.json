@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm ci --legacy-peer-deps && npm run build",
+  "buildCommand": "npm install --legacy-peer-deps --force && CI=false npm run build",
   "devCommand": "npm start",
-  "installCommand": "npm ci --legacy-peer-deps"
+  "installCommand": "npm install --legacy-peer-deps --force"
 }
