@@ -8,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify", marginBottom: "15px" }}>
-            <span className="purple">Data Science & AI Developer</span> with 2+ years of hands-on experience building production-grade LLMs, ML pipelines, and full-stack AI solutions. Currently at <span className="purple">Autodidactic Technologies</span> developing LLM-powered reinforcement learning systems. Computer Engineering graduate (GPA: 3.78/4.00) with proven track record delivering high-impact projects: 50+ enterprise integrations, 97.8% ML accuracy, TEKNOFEST 2024 2nd place awards.
+            <span className="purple">Data Scientist &amp; Software Developer</span> working as an R&amp;D engineer at <span className="purple">Autodidactic Technologies</span>. I build time-series analytics and full-stack tools for industrial quality measurement and research LLM-guided reinforcement learning in a TÜBİTAK-funded project. Computer Engineering graduate (GPA 3.78/4.00), Erasmus+ alumnus in Poland and TEKNOFEST 2024 runner-up.
           </p>
 
           <h5 style={{ marginTop: "20px", marginBottom: "10px" }} className="purple">
@@ -16,19 +16,19 @@ function AboutCard() {
           </h5>
           <ul style={{ marginBottom: "15px" }}>
             <li className="about-activity">
-              <ImPointRight /> <strong>AI/ML Development:</strong> LLMs (prompt engineering, fine-tuning), RL pipelines, deep learning (TensorFlow, PyTorch, Keras)
+              <ImPointRight /> <strong>Data Science &amp; ML:</strong> predictive modelling, time-series forecasting, NLP, scikit-learn, PyTorch, TensorFlow, Hugging Face
             </li>
             <li className="about-activity">
-              <ImPointRight /> <strong>Data Engineering:</strong> PostgreSQL, data pipelines, ETL automation, real-time processing
+              <ImPointRight /> <strong>Time-Series &amp; Sensor Analytics:</strong> PostgreSQL / TimescaleDB continuous aggregates, streaming and batch processing, quality analytics
             </li>
             <li className="about-activity">
-              <ImPointRight /> <strong>Computer Vision:</strong> YOLO v8, object detection, image classification, automated scouting systems
+              <ImPointRight /> <strong>LLMs &amp; Reinforcement Learning:</strong> reward generation with LLMs, fine-tuning (Unsloth, Llama 3, Qwen 2.5), Ollama, Gymnasium
             </li>
             <li className="about-activity">
-              <ImPointRight /> <strong>Full-Stack Development:</strong> React.js, Flask, FastAPI, Docker, microservices architecture
+              <ImPointRight /> <strong>Full-Stack Development:</strong> FastAPI, Flask, Vue 3, React, Next.js, Konva, Keycloak, Redis, Docker
             </li>
             <li className="about-activity">
-              <ImPointRight /> <strong>Technical Leadership:</strong> Team lead, workshop facilitation, architecture design
+              <ImPointRight /> <strong>Computer Vision:</strong> YOLOv8, object detection, real-time occupancy prediction
             </li>
           </ul>
 
@@ -37,22 +37,22 @@ function AboutCard() {
           </h5>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> <strong>TYFOR Platform:</strong> Built end-to-end AI analytics system for 50+ clubs, 1,500+ player profiles, 95% accuracy
+              <ImPointRight /> <strong>Industrial R&amp;D:</strong> built most of a production sensor-data flow end to end; 325 commits and 115 merged PRs in the last 12 months
             </li>
             <li className="about-activity">
-              <ImPointRight /> <strong>LLM Development:</strong> Engineered domain-specific models with HITL feedback loops for military simulations
+              <ImPointRight /> <strong>TEKNOFEST:</strong> 2nd place 2024 (No One Waits) and 4th place 2023 (No Standing Passengers), Smart Transportation
             </li>
             <li className="about-activity">
-              <ImPointRight /> <strong>TEKNOFEST 2024 Winner:</strong> 2nd place - Real-time public transport occupancy prediction system
+              <ImPointRight /> <strong>TYFOR:</strong> football analytics platform with 50+ clubs, 1,500+ player profiles and a computer-vision scouting network
             </li>
             <li className="about-activity">
-              <ImPointRight /> <strong>ML Model Performance:</strong> HR Attrition (97.8% accuracy), Sales Forecasting (0.47 RMSLE), NLP-based complaint classification
+              <ImPointRight /> <strong>Machine Learning:</strong> HR attrition (97.8% accuracy), store sales forecasting (0.47 RMSLE), Turkish NER benchmarks at HAVELSAN
             </li>
             <li className="about-activity">
-              <ImPointRight /> <strong>International Experience:</strong> Erasmus+ Exchange, 6+ months tech roles in Poland, cross-functional team leadership
+              <ImPointRight /> <strong>International Experience:</strong> Erasmus+ at Politechnika Bydgoska (GPA 3.96), internships in Kraków and Gdańsk
             </li>
             <li className="about-activity">
-              <ImPointRight /> <strong>Certifications:</strong> Google Advanced Data Analytics (Coursera 2025), Data Science Scholar (AI & Tech Academy)
+              <ImPointRight /> <strong>Community &amp; Certificates:</strong> GDSC Technology Core Team Lead, Google Advanced Data Analytics, Kaggle Expert
             </li>
           </ul>
 
@@ -60,7 +60,7 @@ function AboutCard() {
             Tech Stack
           </h5>
           <p style={{ marginBottom: "0" }}>
-            <strong>Languages:</strong> Python, JavaScript, C | <strong>Frameworks:</strong> React.js, Flask, FastAPI | <strong>ML/AI:</strong> scikit-learn, TensorFlow, PyTorch, Hugging Face | <strong>Data:</strong> PostgreSQL, BigQuery, Supabase | <strong>Tools:</strong> Docker, Git, Linux, VS Code
+            <strong>Languages:</strong> Python, TypeScript, JavaScript, SQL, C | <strong>Back end:</strong> FastAPI, Flask, SQLAlchemy | <strong>Front end:</strong> Vue 3, React, Next.js, Konva | <strong>Data:</strong> PostgreSQL, TimescaleDB, MariaDB, Redis, BigQuery | <strong>ML/AI:</strong> PyTorch, TensorFlow, scikit-learn, Hugging Face, Ollama, Unsloth | <strong>Tools:</strong> Docker, Keycloak, Git, Linux
           </p>
         </blockquote>
       </Card.Body>

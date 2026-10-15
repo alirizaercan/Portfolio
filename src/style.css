@@ -467,6 +467,35 @@ button:focus {
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+.project-card-view .card-img-top {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.78em;
+  color: var(--imp-text-color);
+  border: 1px solid rgba(199, 112, 240, 0.45);
+  background: rgba(199, 112, 240, 0.08);
+}
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: -4px 0 14px;
+}
+.project-tech span {
+  font-size: 0.75em;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #d9d4e8;
+}
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;

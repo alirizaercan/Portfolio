@@ -20,6 +20,13 @@ import {
   SiSelenium,
   SiFlask,
   SiFastapi,
+  SiVuedotjs,
+  SiTypescript,
+  SiDocker,
+  SiRedis,
+  SiNextdotjs,
+  SiMariadb,
+  SiTimescale,
 } from "react-icons/si";
 
 function Techstack() {
@@ -75,6 +82,27 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSelenium />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="TypeScript">
+        <SiTypescript />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Vue 3">
+        <SiVuedotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Next.js">
+        <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="TimescaleDB">
+        <SiTimescale />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="MariaDB">
+        <SiMariadb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Redis">
+        <SiRedis />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Docker">
+        <SiDocker />
       </Col>
     </Row>
   );

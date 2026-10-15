@@ -19,33 +19,25 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Hi, I'm <b className="purple">Ali Rıza Ercan</b>, a Computer Engineering graduate from KTO Karatay University specializing in
-              <i>
-                <b className="purple"> Data Science and Machine Learning.</b>
-              </i>
+              Hi, I'm <b className="purple">Ali Rıza Ercan</b>, a
+              <b className="purple"> Data Scientist &amp; Software Developer</b> and Computer Engineering graduate of KTO Karatay University (GPA 3.78/4.00).
               <br />
-              <br />I have hands-on experience with technologies such as
-              <i>
-                <b className="purple"> Python, JavaScript, React, Flask, PostgreSQL, and TensorFlow. </b>
-              </i>
+              <br />I currently work as an <b className="purple">R&amp;D engineer at Autodidactic Technologies</b>, building a real-time industrial quality-analytics platform end to end: sensor-data ingestion and time-series storage on
+              <i><b className="purple"> PostgreSQL / TimescaleDB</b></i>, analysis services in
+              <i><b className="purple"> FastAPI</b></i>, and interactive measurement dashboards in
+              <i><b className="purple"> Vue 3</b></i>. In parallel, I work on a TÜBİTAK-funded R&amp;D project on
+              <b className="purple"> LLM-guided reinforcement learning</b>, generating rewards with LLMs and fine-tuning Llama 3 and Qwen 2.5 models.
               <br />
-              <br />My interests lie in developing <b className="purple">AI-driven applications</b> and working on projects involving
-              <b className="purple"> Machine Learning, Data Analytics, Computer Vision, and Football Analytics.</b>
+              <br />Before that I worked as a <b className="purple">Data Science &amp; Software Developer Intern at Mind in Blue</b> in Gdańsk, a
+              <b className="purple"> Data Scientist Intern at HAVELSAN</b> (Turkish NER benchmarks and FastAPI services) and a
+              <b className="purple"> Software Developer Intern at MetalMaker 3D</b> in Kraków. I also studied at Politechnika Bydgoska as an
+              <b className="purple"> Erasmus+</b> exchange student.
               <br />
-              <br />I am currently working as a <b className="purple">Data Science & Software Developer Intern</b> at Mind in Blue in Gdansk, Poland, developing responsive web applications and building data-driven marketing strategies.
+              <br />My graduation project <b className="purple">TYFOR</b> is a football analytics platform covering 50+ clubs and 1,500+ player profiles, and our team won
+              <b className="purple"> 2nd place at TEKNOFEST 2024</b> with a real-time public-transport occupancy prediction system.
               <br />
-              <br />My graduation project, <b className="purple">TYFOR</b>, is a football analytics platform that integrates AI, machine learning, and computer vision to deliver insights to over 50 clubs with 1,500+ player profiles.
-              <br />
-              <br />I hold the <b className="purple">Google Advanced Data Analytics Certificate</b> and was selected as a Data Science Scholar by Google and Yapay Zeka ve Teknoloji Academy.
-              <br />
-              <br />I have gained valuable experience at
-              <b className="purple"> HAVELSAN</b>, Turkey's leading defense industry IT company, as a Data Science Intern, deepening my knowledge of model evaluation and AI-driven solutions while working on Turkish NER models and developing FastAPI microservices.
-              <br />
-              <br />Additionally, I have gained valuable international experience through
-              <b className="purple"> Erasmus+ Mobility Programs</b>, studying at Politechnika Bydgoska and interning at MetalMaker 3D and Mind in Blue in Poland.
-              <br />
-              <br />I am also active in data science competitions, holding an
-              <b className="purple"> Expert status on Kaggle</b> and consistently working on impactful projects.
+              <br />I hold the <b className="purple">Google Advanced Data Analytics Certificate</b>, was a Data Science Scholar of the AI &amp; Technology Academy, and hold
+              <b className="purple"> Expert status on Kaggle</b>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
