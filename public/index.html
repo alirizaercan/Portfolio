@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d0f14" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="%PUBLIC_URL%/favicon.png" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <title>Ali Riza Ercan | Portfolio</title>
-  <meta name="description" content="Self Developed personal website build with React.js">
-
-  <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="Ali Riza Ercan | Portfolio">
-  <meta itemprop="description" content="Self Developed personal website build with React.js">
-  <meta itemprop="image"
-    content="https://raw.githubusercontent.com/alirizaercan/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
-
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://alirizaercan.vercel.app">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Ali Riza Ercan | Portfolio">
-  <meta property="og:description" content="Self Developed personal website build with React.js">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/alirizaercan/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ali Riza Ercan | Portfolio">
-  <meta name="twitter:description" content="Self Developed personal website build with React.js">
-  <meta name="twitter:image"
-    content="https://raw.githubusercontent.com/alirizaercan/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <title>Ali Rıza Ercan · Data Scientist & Software Developer</title>
+  <meta name="description" content="Ali Rıza Ercan, Data Scientist & Software Developer and R&D engineer at Autodidactic Technologies: time-series and sensor analytics, LLM-guided reinforcement learning and full-stack data products." />
+  <meta property="og:url" content="https://alirizaercan.vercel.app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ali Rıza Ercan · Data Scientist & Software Developer" />
+  <meta property="og:description" content="Time-series and sensor analytics, LLM-guided reinforcement learning and full-stack data products." />
+  <meta name="twitter:card" content="summary" />
+  <script>
+    // Apply the saved (or system) theme before first paint to avoid a flash.
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", t);
+        var l = localStorage.getItem("lang");
+        if (l === "en" || l === "tr") document.documentElement.lang = l;
+      } catch (e) {}
+    })();
+  </script>
 </head>
-
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
 </body>
-
 </html>

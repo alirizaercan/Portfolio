@@ -1,72 +1,27 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { FaKaggle, FaMedium } from "react-icons/fa";
+import { usePrefs } from "../prefs";
+import { CopyEmail } from "./ui";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const { t } = usePrefs();
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>
-            <a href="mailto:alirizaercan1@gmail.com" style={{ color: "white", textDecoration: "none" }}>
-              alirizaercan1@gmail.com
-            </a>
-          </h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} Ali Rıza Ercan</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/alirizaercan"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-                title="GitHub Profile"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/alirizaercann/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-                title="LinkedIn Profile"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/alirizaercn"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-                title="Instagram Profile"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="tel:+905342402651"
-                style={{ color: "white" }}
-                title="Phone Number"
-              >
-                📱
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <footer className="footer">
+      <div className="wrap footer-inner">
+        <div>
+          <p className="footer-name"><span className="mono-mark sm" aria-hidden="true">AE</span> Ali Rıza Ercan</p>
+          <p className="muted">© {new Date().getFullYear()} · {t("footer_built")}</p>
+        </div>
+        <CopyEmail />
+        <ul className="footer-social">
+          <li><a href="https://github.com/alirizaercan" target="_blank" rel="noreferrer" aria-label="GitHub"><FiGithub /></a></li>
+          <li><a href="https://www.linkedin.com/in/alirizaercann/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FiLinkedin /></a></li>
+          <li><a href="https://www.kaggle.com/alirizaercan" target="_blank" rel="noreferrer" aria-label="Kaggle"><FaKaggle /></a></li>
+          <li><a href="https://medium.com/@alirizaercan1" target="_blank" rel="noreferrer" aria-label="Medium"><FaMedium /></a></li>
+        </ul>
+      </div>
+    </footer>
   );
 }
 

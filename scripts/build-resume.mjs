@@ -11,12 +11,14 @@ import path from "node:path";
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const tmp = mkdtempSync(path.join(tmpdir(), "cv-"));
 writeFileSync(path.join(tmp, "resume.mjs"), readFileSync(path.join(ROOT, "src/data/resume.js"), "utf8"));
-const r = (await import(path.join(tmp, "resume.mjs"))).default;
+const all = (await import(path.join(tmp, "resume.mjs"))).default;
 const { default: puppeteer } = await import(process.env.PUPPETEER || "puppeteer-core");
 
+for (const [lang, file] of [["en", "Ali_Riza_Ercan_Resume_2026.pdf"], ["tr", "Ali_Riza_Ercan_Ozgecmis_2026.pdf"]]) {
+const r = all[lang]; const L = r.labels;
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const link = c => `<a href="${c.href}">${esc(c.label)}</a>`;
-const html = `<!doctype html><html><head><meta charset="utf-8">
+const html = `<!doctype html><html lang="${lang}"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   @page { size: A4; margin: 14mm 15mm 13mm; }
@@ -45,25 +47,26 @@ const html = `<!doctype html><html><head><meta charset="utf-8">
   <div class="title">${esc(r.title)}</div>
   <div class="contacts"><span>${esc(r.location)}</span>${r.contacts.map(c => `<span>${link(c)}</span>`).join("")}</div>
 </header>
-<h2>Profile</h2><p class="summary">${esc(r.summary)}</p>
-<h2>Experience</h2>
+<h2>${L.profile}</h2><p class="summary">${esc(r.summary)}</p>
+<h2>${L.experience}</h2>
 ${r.experience.map(x => `<div class="item"><div class="head"><span><b>${esc(x.role)}</b> · ${esc(x.company)}</span><span class="when">${esc(x.period)}</span></div><div class="sub">${esc(x.place)}</div><ul>${x.bullets.map(b => `<li>${esc(b)}</li>`).join("")}</ul></div>`).join("")}
-<h2>Education</h2>
+<h2>${L.education}</h2>
 ${r.education.map(e => `<div class="item"><div class="head"><span><b>${esc(e.school)}</b> · ${esc(e.degree)}</span><span class="when">${esc(e.period)}</span></div><div class="sub">${esc(e.place)}</div></div>`).join("")}
-<h2>Selected projects</h2>
+<h2>${L.projects}</h2>
 <div>${r.projects.map(p => `<div class="item proj"><b>${p.link ? `<a href="${p.link}">${esc(p.name)}</a>` : esc(p.name)}</b> — ${esc(p.text)}</div>`).join("")}</div>
-<h2>Skills</h2>
+<h2>${L.skills}</h2>
 <div class="skills">${r.skills.map(s => `<div><b>${esc(s.group)}:</b> ${s.items.map(esc).join(", ")}</div>`).join("")}</div>
 <div class="two">
-  <div><h2>Awards &amp; certificates</h2><ul>${r.awards.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>
-  <div><h2>Languages</h2>${r.languages.map(l => `<div><b>${esc(l.name)}</b>: ${esc(l.level)}</div>`).join("")}</div>
+  <div><h2>${esc(L.awards)}</h2><ul>${r.awards.map(a => `<li>${esc(a)}</li>`).join("")}</ul></div>
+  <div><h2>${L.languages}</h2>${r.languages.map(l => `<div><b>${esc(l.name)}</b>: ${esc(l.level)}</div>`).join("")}</div>
 </div>
 </body></html>`;
 
 const b = await puppeteer.launch({ executablePath: process.env.CHROME || "/usr/bin/google-chrome-stable", headless: true, args: ["--no-sandbox"] });
 const p = await b.newPage();
 await p.setContent(html, { waitUntil: "networkidle0" });
-const out = path.join(ROOT, "src/Assets/Ali_Riza_Ercan_Resume_2026.pdf");
+const out = path.join(ROOT, "src/Assets", file);
 await p.pdf({ path: out, format: "A4", printBackground: true, preferCSSPageSize: true });
 await b.close();
 console.log("CV yazıldı:", out);
+}

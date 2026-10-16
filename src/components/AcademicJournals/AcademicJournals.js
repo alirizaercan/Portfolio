@@ -1,33 +1,40 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import JournalCards from "./JournalCards";
-import Particle from "../Particle";
-import journalImage from "../../Assets/Projects/journal_image.png"; // Replace with your image path
+import { FiFileText } from "react-icons/fi";
+import { usePrefs } from "../../prefs";
+import journalImage from "../../Assets/Projects/journal_image.png";
+
+const PAPER = {
+  title: {
+    en: "Comparative Evaluation of Deep Learning and Shallow Learning Classification Algorithms on Medical Datasets",
+    tr: "Tıbbi Veri Setlerinde Derin Öğrenme ve Sığ Öğrenme Sınıflandırma Algoritmalarının Karşılaştırmalı Değerlendirmesi",
+  },
+  text: {
+    en: "Compares the effectiveness of deep learning and classical (shallow) machine-learning classifiers on medical datasets, focusing on accuracy and performance differences across model families.",
+    tr: "Tıbbi veri setlerinde derin öğrenme ile klasik (sığ) makine öğrenmesi sınıflandırıcılarının etkinliğini karşılaştırır; model aileleri arasındaki doğruluk ve performans farklarına odaklanır.",
+  },
+  tags: ["Deep learning", "Classification", "Medical data"],
+};
 
 function AcademicJournals() {
+  const { t, tx } = usePrefs();
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Academic Journal</strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here is my academic journal titled <strong> "Comparative Evaluation of Deep Learning and Shadow Learning Classification Algorithms on Medical Datasets" </strong>, currently in progress for publication.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <JournalCards
-              imgPath={journalImage} // Replace this with the path to the image you want to use
-              isBlog={false}
-              title="Comparative Evaluation of Deep Learning and Shadow Learning Classification Algorithms on Medical Datasets"
-              description="This academic journal explores and compares the effectiveness of deep learning and shadow learning algorithms on medical datasets. It focuses on classification tasks, highlighting performance and accuracy differences across various model types."
-              //driveLink="https://drive.google.com/file/d/your_file_id_here/view" // Replace with your actual Drive link
-            />
-          </Col>
-        </Row>
-      </Container>
-    </Container>
+    <main id="main" className="page">
+      <div className="wrap">
+        <header className="page-head">
+          <p className="kicker">{t("research_title")}</p>
+          <h1 className="h1">{t("research_lead")}</h1>
+        </header>
+        <article className="paper">
+          <img src={journalImage} alt="" loading="lazy" />
+          <div>
+            <p className="pcard-badge"><FiFileText aria-hidden="true" /> {t("in_prep")}</p>
+            <h2 className="paper-title">{tx(PAPER.title)}</h2>
+            <p className="pcard-text">{tx(PAPER.text)}</p>
+            <ul className="chips">{PAPER.tags.map((x) => <li key={x}>{x}</li>)}</ul>
+          </div>
+        </article>
+      </div>
+    </main>
   );
 }
 
