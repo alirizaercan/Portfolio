@@ -3,6 +3,7 @@ import GitHubCalendar from "react-github-calendar";
 import { usePrefs } from "../../prefs";
 import resume from "../../data/resume";
 import { SectionHead } from "../ui";
+import askMoji from "../../Assets/knowhoim-removebg-preview.png";
 
 const BIO = {
   en: [
@@ -33,9 +34,14 @@ function About() {
   return (
     <main id="main" className="page">
       <div className="wrap">
-        <header className="page-head">
-          <p className="kicker">{t("about_title")}</p>
-          <h1 className="h1">{t("about_lead")}</h1>
+        <header className="page-head page-head--art">
+          <div>
+            <p className="kicker">{t("about_title")}</p>
+            <h1 className="h1">{t("about_lead")}</h1>
+          </div>
+          <div className="about-moji" aria-hidden="true">
+            <img className="moji" src={askMoji} alt="" width="398" height="398" />
+          </div>
         </header>
 
         <div className="about-grid">

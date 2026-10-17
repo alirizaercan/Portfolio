@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import { FiSun, FiMoon, FiMenu, FiX, FiArrowUpRight } from "react-icons/fi";
 import { usePrefs } from "../prefs";
+import bitmojiMark from "../Assets/bitmoji-mark.png";
 
 export function LangSwitch() {
   const { lang, setLang, t } = usePrefs();
@@ -58,7 +59,7 @@ function NavBar() {
       <a href="#main" className="skip">{t("skip")}</a>
       <div className="wrap nav-inner">
         <Link to="/" className="brand" aria-label="Ali Rıza Ercan">
-          <span className="mono-mark" aria-hidden="true">AE</span>
+          <img className="mono-mark moji-mark" src={bitmojiMark} alt="" aria-hidden="true" width="64" height="64" />
           <span className="brand-name">Ali Rıza Ercan</span>
         </Link>
 

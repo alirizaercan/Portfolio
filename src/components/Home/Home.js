@@ -8,6 +8,8 @@ import projects from "../../data/projects";
 import { SectionHead, ProjectCard, CopyEmail, Signal } from "../ui";
 import cvEn from "../../Assets/Ali_Riza_Ercan_Resume_2026.pdf";
 import cvTr from "../../Assets/Ali_Riza_Ercan_Ozgecmis_2026.pdf";
+import waveMoji from "../../Assets/home_avatar-removebg-preview.png";
+import portraitMoji from "../../Assets/bitmoji-portrait.png";
 
 const NOW = [
   {
@@ -71,13 +73,17 @@ function Home() {
               </span>
             </div>
           </div>
-          <figure className="hero-figure">
-            <div className="fig-head">
-              <span className="fig-title">stream_07 · sensor_value</span>
-              <span className="fig-live"><span className="dot" aria-hidden="true" /> live</span>
-            </div>
-            <Signal />
-          </figure>
+          <div className="hero-art">
+            <div className="halo" aria-hidden="true" />
+            <img className="moji moji-hero" src={waveMoji} alt={lang === "tr" ? "Ali Rıza Ercan'ın bitmojisi, el sallıyor" : "Ali Rıza Ercan's bitmoji, waving"} width="398" height="398" />
+            <figure className="hero-figure hero-figure--float">
+              <div className="fig-head">
+                <span className="fig-title">stream_07 · sensor_value</span>
+                <span className="fig-live"><span className="dot" aria-hidden="true" /> live</span>
+              </div>
+              <Signal />
+            </figure>
+          </div>
         </div>
 
         <div className="wrap">
@@ -140,7 +146,8 @@ function Home() {
       <section className="section">
         <div className="wrap">
           <div className="contact">
-            <div>
+            <span className="moji-contact" aria-hidden="true"><img src={portraitMoji} alt="" width="270" height="266" /></span>
+            <div className="contact-copy">
               <h2 className="h2">{t("contact_title")}</h2>
               <p className="sec-sub">{t("contact_text")}</p>
             </div>
