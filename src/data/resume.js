@@ -71,6 +71,7 @@ const en = {
     { school: "AI and Technology Academy", degree: "Data Science Scholar", place: "Online", period: "Jan 2025 – Aug 2025" },
   ],
   projects: [
+    { name: "Maksforma", link: "https://maksforma.vercel.app", text: "Fitness and health platform built end to end: live workout logging, 40-region muscle map, progress analytics, AI-read lab results, gym check-ins; Vue 3, FastAPI, PostgreSQL (Supabase), Gemini." },
     { name: "TYFOR", link: "https://tyfor.online", text: "Football analytics platform with 50+ clubs and 1,500+ player profiles; computer-vision (YOLOv8) scouting network; React, Flask, PostgreSQL, Docker." },
     { name: "No One Waits", link: "https://beklemesinkimse.com", text: "Real-time public-transport occupancy prediction with computer vision; TEKNOFEST 2024, 2nd place." },
     { name: "Miss Minutes", text: "Voice-first personal command center in Next.js: LLM tool use, streaming TTS, Google OAuth integrations, listening analytics." },
@@ -160,6 +161,7 @@ const tr = {
     { school: "Yapay Zekâ ve Teknoloji Akademisi", degree: "Veri Bilimi Bursiyeri", place: "Çevrim içi", period: "Oca 2025 – Ağu 2025" },
   ],
   projects: [
+    { name: "Maksforma", link: "https://maksforma.vercel.app", text: "Uçtan uca geliştirdiğim fitness ve sağlık platformu: canlı antrenman kaydı, 40 bölgelik kas haritası, gelişim analitiği, yapay zekâyla okunan kan tahlilleri, salon girişi; Vue 3, FastAPI, PostgreSQL (Supabase), Gemini." },
     { name: "TYFOR", link: "https://tyfor.online", text: "50+ kulüp ve 1.500+ oyuncu profiliyle futbol analitiği platformu; bilgisayarlı görü (YOLOv8) tabanlı scouting ağı; React, Flask, PostgreSQL, Docker." },
     { name: "Beklemesin Kimse", link: "https://beklemesinkimse.com", text: "Bilgisayarlı görü ile toplu taşımada gerçek zamanlı doluluk tahmini; TEKNOFEST 2024 ikincilik." },
     { name: "Miss Minutes", text: "Next.js ile sesli kişisel komuta merkezi: LLM araç kullanımı, akışlı TTS, Google OAuth entegrasyonları, dinleme analitiği." },

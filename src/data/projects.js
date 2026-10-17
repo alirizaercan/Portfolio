@@ -3,6 +3,7 @@
 import industrial from "../Assets/Projects/industrial.png";
 import llmrl from "../Assets/Projects/rl.png";
 import missminutes from "../Assets/Projects/missminutes.png";
+import maksforma from "../Assets/Projects/maksforma.png";
 import mindinblue from "../Assets/Projects/mindinblue.png";
 import tyfor from "../Assets/Projects/tyfor_main_page.png";
 import noonewaits from "../Assets/Projects/noonewaits.png";
@@ -25,7 +26,17 @@ const projects = [
     tech: ["FastAPI", "PostgreSQL", "TimescaleDB", "MariaDB", "Redis", "Vue 3", "Konva", "Keycloak", "Docker"],
   },
   {
-    id: "llmrl", cat: ["industry", "ai"], img: llmrl, lock: "private", featured: true,
+    id: "maksforma", cat: ["ai", "web"], img: maksforma, demo: "https://maksforma.vercel.app", featured: true,
+    title: { en: "Maksforma · Training, Body & Health Tracker", tr: "Maksforma · Antrenman, Vücut ve Sağlık Takibi" },
+    badge: { en: "Personal project · live", tr: "Kişisel proje · yayında" },
+    text: {
+      en: "A full fitness platform I designed and built end to end: live workout logging with rest timers and automatic PR detection, an 876-exercise library with a clickable 40-region muscle map, progress analytics (estimated 1RM, volume, weekly muscle load), body and nutrition tracking, lab-result PDFs read by Gemini and charted against reference ranges, and gym check-in/out by location. Separate panels for members, personal trainers, gym owners and admins; push, email and SMS notifications; Turkish, English and Polish.",
+      tr: "Uçtan uca tasarlayıp geliştirdiğim bir fitness platformu: dinlenme sayacı ve otomatik rekor tespitiyle canlı antrenman kaydı, tıklanabilir 40 bölgelik kas haritasıyla 876 hareketlik kütüphane, gelişim analitiği (tahmini 1RM, hacim, haftalık kas yükü), vücut ve beslenme takibi, Gemini ile okunup referans aralıklarıyla grafiğe dökülen kan tahlili PDF'leri ve konuma göre salon giriş/çıkışı. Üye, kişisel antrenör, salon sahibi ve yönetici için ayrı paneller; anlık bildirim, e-posta ve SMS; Türkçe, İngilizce ve Lehçe.",
+    },
+    tech: ["Vue 3", "Vite", "Tailwind", "ECharts", "FastAPI", "PostgreSQL", "Supabase", "Gemini API", "Leaflet", "PWA"],
+  },
+  {
+    id: "llmrl", cat: ["industry", "ai"], img: llmrl, lock: "private",
     title: { en: "LLM-Guided Reinforcement Learning", tr: "LLM Yönlendirmeli Pekiştirmeli Öğrenme" },
     badge: { en: "TÜBİTAK-funded R&D", tr: "TÜBİTAK destekli Ar-Ge" },
     text: {
